@@ -4,10 +4,6 @@
 
 $font-awesome-dir:                    "../fonts/"
 $static-img:                          "../img/"
-
-$nav-content-width:                   800px
-$nav-media-query:                     (($nav-desktop-width) + ($nav-content-width))
-
 $mathjax-color:                       $text-color
 
 $headerlink-color:                    $text-color
@@ -27,12 +23,16 @@ $guilabel-color:                      $blue
 $footer-color:                        $text-medium
 
 // Menu colors
+$menu-background-color:               #2C2C2C
 $menu-vertical-background-color:      $section-background-color
+
+// Button colors
+//$button-neutral-background-color:     $white
 
 // Menu text colors
 $menu-color:                          $gray
 $menu-dark:                           lighten($menu-color,10%) !default
-$menu-medium:                         lighten($menu-color,27.5%) !default
+$menu-medium:                         lighten($menu-color,25%) !default
 $menu-light:                          lighten($menu-color,45%) !default
 $menu-lighter:                        lighten($menu-color,60%) !default
 
@@ -40,18 +40,23 @@ $menu-lighter:                        lighten($menu-color,60%) !default
 $menu-link-color:                     $text-color
 $menu-link-dark:                      $text-dark
 $menu-link-medium:                    $text-medium
-$menu-link-light:                     $text-lighter
+$menu-link-light:                     $text-light
 $menu-link-active:                    $white
 
 // Navigation colors
 $nav-background-color:                $menu-background-color
-$nav-search-background-color:         $blue
+$nav-search-background-color:         $white
 $nav-search-color:                    $section-background-color
 $nav-link-color:                      $blue
 $nav-link-color-visited:              $purple
 $nav-link-color-hover:                lighten($nav-link-color, 6%) !default
 $nav-link-color-alt:                  hsl(33, 100%, 51%)
-$nav-caption:                         desaturate($blue, 15%)
+
+// Links
+$link-color:                          #C02124
+$link-color-hover:                    lighten( $link-color, 10% )
+$link-color-visited:                  darken( $link-color, 10% )
+
 
 // Sidebar colors
 $sidebar-background-color:            $table-stripe-color
@@ -61,7 +66,7 @@ $sidebar-title-background-color:      $table-border-color
 // Sphinx highlight color
 $highlight-color:                     $yellow
 
-$base-font-family:                    "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif
-$custom-font-family:                  "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif
+$base-font-family:                    "DIN Next", "proxima-nova", "Helvetica Neue", Arial, sans-serif
+$custom-font-family:                  "DIN Next", "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif
 $custom-font-family2:                 Georgia, serif
-$code-font-family:                    SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace
+$code-font-family:                    Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace
